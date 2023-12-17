@@ -1,21 +1,28 @@
 # Projet_MLOps_G6
 ## Detection of Microcalcifications in mammography
-**1.Première étape:**
-On a définit le projet et décider sur quoi travailler : **Detection of Microcalcifications in mammography**.
-On a égaelement identifié les métriques à surveiller :
-Accuracy / Précision / Recall / F1.
+Projet MLOps_G6: Détection des Microcalcifications en mammographie
 
-**2.Data:**
-Sur le fichier mammography.csv, on a acquérit et exploré les données dont nous avons besoin (sur kaggle).
+Le projet MLOps_G6 se concentre sur la détection des microcalcifications dans les mammographies, avec un processus bien défini et des étapes clés.
 
-**3.Modélisation:**
-Sur le fichier CodeSource.py, nous avons identifié le modèle adapté à notre problématique (RandomForestClassifier) un modèle existant.
-Ensuit nous l'avons l’exécuté sur notre dataset, et surveillé son comportement en production.
+1. **Définition du Projet et Choix des Métriques:**
+   Dans la première phase, le projet a été soigneusement défini, mettant l'accent sur la détection des microcalcifications en mammographie. Les métriques cruciales à surveiller ont été identifiées, notamment l'Accuracy, la Précision, le Recall et le F1, afin d'évaluer la performance du modèle de manière exhaustive.
 
-**4. Le déploiement:**
-Nous avons exposé notre modèle en mode API en utilisant la librairie fastapi, que nous avons vu en cours MLOps et TDLOG.
-Ensuite nous avons monitoré son comportement à l’aide du tandem prometheus/grafana comme appris dans le cours de MLOps.
-Les screenshots sont dans les folders: provisioning et Target_prometheus .
+2. **Acquisition et Exploration des Données:**
+   Les données nécessaires ont été obtenues à partir du fichier "mammography.csv" disponible sur Kaggle. Une exploration approfondie de ces données a été entreprise pour comprendre leur nature et garantir leur adéquation pour le modèle.
+
+3. **Modélisation avec RandomForestClassifier:**
+   La phase de modélisation a impliqué l'identification du modèle le mieux adapté à la problématique, à savoir le RandomForestClassifier. Ce modèle préexistant a été intégré dans le fichier "CodeSource.py". Le modèle a été exécuté sur le jeu de données sélectionné, et son comportement a été surveillé pendant la phase de production.
+
+4. **Intégration de FastAPI pour une Gestion Efficace de l'API :**
+   FastAPI a été choisi comme framework pour exposer l'API du modèle. Grâce à ses annotations de type et à sa documentation automatique, FastAPI facilite le développement, la validation des données, et assure une documentation interactive pour l'API.
+
+5. **Utilisation de Docker pour l'Isolation et la Portabilité :**
+   Docker a été intégré dans le processus pour encapsuler le modèle, assurant ainsi son isolation et sa portabilité. Cette approche garantit une cohérence dans le déploiement du modèle indépendamment de l'environnement.
+
+6. **Déploiement en tant qu'API avec FastAPI et Surveillance avec Prometheus/Grafana:**
+   Le modèle a été exposé en tant qu'API grâce à l'utilisation de la bibliothèque FastAPI, enseignée dans les cours MLOps et TDLOG. Le déploiement a été suivi d'une surveillance continue du modèle en production. La surveillance a été réalisée en utilisant le tandem Prometheus/Grafana, des outils puissants enseignés dans le cadre du cours MLOps. Des captures d'écran illustrant le processus de provisionnement et les résultats de la surveillance sont disponibles dans les dossiers "provisioning" et "Target_prometheus".
+
+Ce processus complet, depuis la définition du projet jusqu'à la surveillance en production, démontre l'approche MLOps rigoureuse adoptée par l'équipe du Projet MLOps_G6 pour assurer le succès de la détection des microcalcifications en mammographie, en intégrant des outils tels que FastAPI, Docker, et le tandem Prometheus/Grafana.
 
 Les membres de l'équipe sont: 
 YAKHOU Yousra,
